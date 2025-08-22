@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About{% endblock %}
+<link rel="stylesheet" href="{% static "/css/about.css" %}">
+{% block content %}
+<section class="py-5" style="background: #167bc9ff;">
+  <div class="container">
+   <h1 class="text-center mb-4 fw-bold" style="color: orange;">About Us</h1>
+    <hr class="mx-auto mb-5" style="width: 100px; border: 2px solid #1927bfff;">
+<div class="container my-5">
+    <hr>
+    {% for a in abt %}
+    <div class="card mb-4 shadow-sm">
+        <div class="card-body" style="background-color: #f0f8ff;">
+            <h2 class="card-title text-center">{{ a.abt_name }}</h2>
+            <hr>
+            <p class="card-text">{{ a.abt_des }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+     

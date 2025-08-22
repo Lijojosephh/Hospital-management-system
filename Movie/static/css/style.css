@@ -1,0 +1,19 @@
+li:hover{
+    background-color: rgb(254, 5, 5);
+    border-radius: 10px;
+    border :1px solid black;
+}
+.nav-link {
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+
+  .nav-link:hover {
+    color: #ffc107 !important; /* Bootstrap warning color */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+
+  .navbar-brand {
+    letter-spacing: 500px;
+    
+  }

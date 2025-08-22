@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title%}Booking{% endblock  %}
+
+     {% block content%}
+    <section class="py-5" style="background: #7e7cb9ff;">
+  <div class="container">
+    <h1 class="text-center mb-4 fw-bold" style="color: orange;">Appoinment Here</h1>
+    <hr class="mx-auto mb-5" style="width: 100px; border: 2px solid #007bff;">
+ <div class="container w-50 text-center p-3 my-5 bg-info">
+     <form action="" method="POST">
+          {% csrf_token%}
+          {{form|crispy}}
+          <br>
+
+          <button class="btn btn-primary mb-4"type="Submit">Submit</button>
+          <hr>
+     </form>     
+</div>     
+     {% endblock  %}

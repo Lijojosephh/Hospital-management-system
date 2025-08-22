@@ -1,0 +1,19 @@
+.doctor-img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.doctor-card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
+}
+
